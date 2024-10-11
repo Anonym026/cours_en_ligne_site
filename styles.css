@@ -1,24 +1,21 @@
-/* Styles globaux */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu */
     color: #333;
-    transition: background-color 0.3s;
+    background: linear-gradient(to bottom, #6ec6ff, #1e90ff);
+    transition: background 0.5s ease;
 }
 
 header {
-    background: #2196f3; /* Couleur d'en-tête */
-    color: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     text-align: center;
-    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-    background: #1976d2; /* Couleur du menu de navigation */
-    color: white;
+    margin: 20px 0;
 }
 
 nav ul {
@@ -31,76 +28,42 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #1e90ff;
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffeb3b; /* Couleur d'hover des liens */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #2196f3; /* Couleur de pied de page */
-    color: white;
+    background: rgba(255, 255, 255, 0.9);
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Styles pour les boutons de téléchargement */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background: #4caf50; /* Couleur des boutons */
+.download-btn {
+    background-color: #1e90ff;
     color: white;
-    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.button:hover {
-    background: #45a049; /* Couleur d'hover des boutons */
-}
-
-/* Couleurs spécifiques pour chaque matière */
-body.math {
-    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu pour Mathématiques */
-}
-
-body.physique {
-    background: linear-gradient(to right, #bbdefb, #90caf9); /* Dégradé bleu pour Physique */
-}
-
-body.chimie {
-    background: linear-gradient(to right, #fce4ec, #f8bbd0); /* Dégradé rose pour Chimie */
-}
-
-body.svt {
-    background: linear-gradient(to right, #e8f5e9, #c8e6c9); /* Dégradé vert pour SVT */
-}
-
-body.francais {
-    background: linear-gradient(to right, #ffe0b2, #ffcc80); /* Dégradé orange pour Français */
-}
-
-body.histoire {
-    background: linear-gradient(to right, #fce4ec, #f8bbd0); /* Dégradé rose pour Histoire */
-}
-
-body.geographie {
-    background: linear-gradient(to right, #bbdefb, #90caf9); /* Dégradé bleu pour Géographie */
-}
-
-body.anglais {
-    background: linear-gradient(to right, #f0f4c3, #e6ee9c); /* Dégradé jaune pour Anglais */
+.download-btn:hover {
+    background-color: #0056b3;
 }
