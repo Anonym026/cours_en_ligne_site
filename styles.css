@@ -1,141 +1,89 @@
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.3s ease;
 }
 
 header {
-    padding: 20px;
+    background: linear-gradient(to right, #6a1b9a, #8e24aa);
     color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
 }
 
-section {
-    margin: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 10px 0;
-    padding: 15px;
+main {
+    padding: 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-ul li:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+/* Couleurs spécifiques pour chaque matière */
+body.maths {
+    background-color: #e1f5fe; /* Couleur spécifique pour les maths */
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+body.physique {
+    background-color: #e0f7fa; /* Couleur spécifique pour la physique */
 }
 
-a:hover {
-    text-decoration: underline;
+body.chimie {
+    background-color: #fce4ec; /* Couleur spécifique pour la chimie */
+}
+
+body.svt {
+    background-color: #c8e6c9; /* Couleur spécifique pour la SVT */
+}
+
+body.philosophie {
+    background-color: #f3e5f5; /* Couleur spécifique pour la philosophie */
+}
+
+body.francais {
+    background-color: #fff9c4; /* Couleur spécifique pour le français */
+}
+
+body.histoire {
+    background-color: #ffccbc; /* Couleur spécifique pour l'histoire */
+}
+
+body.geographie {
+    background-color: #bbdefb; /* Couleur spécifique pour la géographie */
+}
+
+body.anglais {
+    background-color: #f1f8e9; /* Couleur spécifique pour l'anglais */
+}
+
+body.informatique {
+    background-color: #ffe0b2; /* Couleur spécifique pour l'informatique */
+}
+
+body.education-civique {
+    background-color: #c5cae9; /* Couleur spécifique pour l'éducation civique */
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0d47a1;
 }
 
 footer {
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Styles spécifiques par matière */
-
-/* Page d'accueil - général */
-body.index {
-    background: linear-gradient(135deg, #e09, #d0e);
-}
-
-header.index {
-    background-color: #333;
-}
-
-/* Mathématiques - violet */
-body.maths {
-    background: linear-gradient(135deg, #7b4397, #dc2430); /* Violet - Rouge */
-}
-
-header.maths {
-    background-color: #7b4397;
-}
-
-/* Physique - bleu */
-body.physique {
-    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Bleu clair - Bleu foncé */
-}
-
-header.physique {
-    background-color: #36d1dc;
-}
-
-/* Chimie - vert */
-body.chimie {
-    background: linear-gradient(135deg, #56ab2f, #a8e063); /* Vert foncé - Vert clair */
-}
-
-header.chimie {
-    background-color: #56ab2f;
-}
-
-/* SVT - marron/vert */
-body.svt {
-    background: linear-gradient(135deg, #614385, #516395); /* Violet foncé - Violet clair */
-}
-
-header.svt {
-    background-color: #614385;
-}
-
-/* Philosophie - jaune/orange */
-body.philosophie {
-    background: linear-gradient(135deg, #f7971e, #ffd200); /* Orange - Jaune */
-}
-
-header.philosophie {
-    background-color: #f7971e;
-}
-
-/* Histoire - rouge */
-body.histoire {
-    background: linear-gradient(135deg, #ff512f, #dd2476); /* Rouge foncé - Rose */
-}
-
-header.histoire {
-    background-color: #ff512f;
-}
-
-/* Géographie - marron clair */
-body.geographie {
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* Bleu ciel - Violet */
-}
-
-header.geographie {
-    background-color: #8ec5fc;
-}
-
-/* Anglais - bleu/rouge */
-body.anglais {
-    background: linear-gradient(135deg, #3494e6, #ec6ead); /* Bleu - Rouge clair */
-}
-
-header.anglais {
-    background-color: #3494e6;
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
 }
