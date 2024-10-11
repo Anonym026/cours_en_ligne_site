@@ -1,118 +1,141 @@
-
-/* Général */
-* {
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 header {
-    background: linear-gradient(135deg, #43cea2, #185a9d);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
-}
-
-header:hover {
-    background: linear-gradient(135deg, #185a9d, #43cea2);
-}
-
-header h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-#courses {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 40px auto;
-    width: 80%;
-    text-align: center;
-}
-
-#courses h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.course-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.course-item {
-    background-color: #f9f9f9;
-    border-radius: 10px;
     padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+    color: white;
 }
 
-.course-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.course-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+section {
+    margin: 20px;
 }
 
-.course-item a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #43cea2;
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: inline-block;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
-.course-item a:hover {
-    background-color: #185a9d;
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Footer */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #333;
-    color: #bbb;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    font-size: 0.9rem;
+/* Styles spécifiques par matière */
+
+/* Page d'accueil - général */
+body.index {
+    background: linear-gradient(135deg, #e09, #d0e);
+}
+
+header.index {
+    background-color: #333;
+}
+
+/* Mathématiques - violet */
+body.maths {
+    background: linear-gradient(135deg, #7b4397, #dc2430); /* Violet - Rouge */
+}
+
+header.maths {
+    background-color: #7b4397;
+}
+
+/* Physique - bleu */
+body.physique {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Bleu clair - Bleu foncé */
+}
+
+header.physique {
+    background-color: #36d1dc;
+}
+
+/* Chimie - vert */
+body.chimie {
+    background: linear-gradient(135deg, #56ab2f, #a8e063); /* Vert foncé - Vert clair */
+}
+
+header.chimie {
+    background-color: #56ab2f;
+}
+
+/* SVT - marron/vert */
+body.svt {
+    background: linear-gradient(135deg, #614385, #516395); /* Violet foncé - Violet clair */
+}
+
+header.svt {
+    background-color: #614385;
+}
+
+/* Philosophie - jaune/orange */
+body.philosophie {
+    background: linear-gradient(135deg, #f7971e, #ffd200); /* Orange - Jaune */
+}
+
+header.philosophie {
+    background-color: #f7971e;
+}
+
+/* Histoire - rouge */
+body.histoire {
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Rouge foncé - Rose */
+}
+
+header.histoire {
+    background-color: #ff512f;
+}
+
+/* Géographie - marron clair */
+body.geographie {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* Bleu ciel - Violet */
+}
+
+header.geographie {
+    background-color: #8ec5fc;
+}
+
+/* Anglais - bleu/rouge */
+body.anglais {
+    background: linear-gradient(135deg, #3494e6, #ec6ead); /* Bleu - Rouge clair */
+}
+
+header.anglais {
+    background-color: #3494e6;
 }
