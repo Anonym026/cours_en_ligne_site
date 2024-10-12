@@ -38,7 +38,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Styles for the subjects' buttons */
+/* Styles for the subjects' buttons - vertically aligned */
 .subject-buttons {
     display: flex;
     flex-direction: column;
@@ -49,19 +49,19 @@ h2 {
     display: inline-block;
     padding: 20px 40px;
     margin: 0 auto;
-    background-color: #e07a5f;
+    background-color: #e07a5f; /* Couleur des matières */
     color: #ffffff;
     font-size: 1.2em;
     text-decoration: none;
     border-radius: 8px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s ease;
-    width: 80%; /* Make the button larger */
-    max-width: 500px; /* Limit maximum size */
+    width: 80%; /* Bouton plus grand */
+    max-width: 500px; /* Limite la taille */
 }
 
 .subject-buttons a:hover {
-    background-color: #d65a41;
+    background-color: #d65a41; /* Couleur des matières au survol */
 }
 
 /* Styles for chapter download buttons */
@@ -77,7 +77,7 @@ ul li {
 .button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #a29bfe; /* Light purple */
+    background-color: #a29bfe; /* Violet clair */
     color: #ffffff;
     font-size: 1.1em;
     text-decoration: none;
