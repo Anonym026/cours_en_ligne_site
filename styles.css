@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f0f8ff; /* Fond clair pour un meilleur contraste */
 }
 
 h1, h2, h3, h4 {
@@ -13,7 +14,7 @@ h1, h2, h3, h4 {
 
 /* Couleurs de fond et de texte */
 header {
-    background: linear-gradient(to right, #b92b27, #1565c0);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
     padding: 20px;
     text-align: center;
@@ -28,7 +29,7 @@ footer {
 
 /* Boutons */
 button {
-    background: #ffe000;
+    background: #6dd5ed;
     border: none;
     color: #333333;
     padding: 10px 15px;
@@ -38,7 +39,7 @@ button {
 }
 
 button:hover {
-    background: #799f0c;
+    background: #2193b0;
 }
 
 /* Liens */
@@ -59,8 +60,9 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Sections spécifiques */
 .maths {
-    background: linear-gradient(to right, #333333, #dd1818);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
 }
 
@@ -75,31 +77,31 @@ a:hover {
 }
 
 .svt {
-    background: linear-gradient(to right, #11998e, #38ef7d);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
 }
 
 .histoire {
-    background: linear-gradient(to right, #11998e, #38ef7d);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
 }
 
 .geographie {
-    background: linear-gradient(to right, #11998e, #38ef7d);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
 }
 
 .anglais {
-    background: linear-gradient(to right, #b92b27, #1565c0);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: white;
 }
 
 .francais {
-    background: linear-gradient(to right, #ffe000, #799f0c);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: black;
 }
 
 .philosophie {
-    background: linear-gradient(to right, #ffe000, #799f0c);
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     color: black;
 }
