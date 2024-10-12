@@ -1,87 +1,89 @@
+/* Couleurs principales */
 :root {
-    --bleu-marine: #002b5c;
-    --corail: #e86e1e;
-    --gris-clair: #f4f4f4;
-    --turquoise: #009688;
-    --texte: #333333;
-
-    --gradient-bg: linear-gradient(180deg, var(--gris-clair), var(--bleu-marine));
+    --primary-color: #1b263b;  /* Bleu foncé élégant */
+    --secondary-color: #415a77; /* Bleu moyen */
+    --accent-color: #e0aaff;    /* Rose violet doux */
+    --background-color: #0d1b2a; /* Très sombre, sans blanc */
+    --button-color: #e63946;    /* Rouge vibrant pour les boutons */
+    --text-color: #ffffff;      /* Texte blanc propre */
 }
 
+/* Style de base pour toutes les pages */
 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: var(--gradient-bg);
-    color: var(--texte); /* Couleur de texte principale */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Style pour les en-têtes */
 header {
+    background-color: var(--primary-color);
+    padding: 30px 0;
     text-align: center;
-    padding: 20px;
-    background-color: var(--bleu-marine); /* Couleur de fond de l'en-tête */
-    color: white; /* Texte blanc pour le contraste */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    color: var(--accent-color);
 }
 
-nav {
-    margin: 20px 0;
+header p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
 }
 
-nav a {
-    text-decoration: none;
-    color: white; /* Liens blancs */
-    background-color: var(--corail); /* Fond corail pour les liens */
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+/* Style pour le contenu principal */
+main {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
 }
 
-nav a:hover {
-    background-color: var(--turquoise); /* Changement de couleur au survol */
-}
-
-.section {
-    margin: 20px;
-    padding: 20px;
-    background: white; /* Sections avec fond blanc pour la clarté */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Style pour les titres secondaires */
 h2 {
-    font-size: 2em;
-    color: var(--bleu-marine);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent-color);
 }
 
-p {
-    line-height: 1.6;
+/* Liste de chapitres */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.footer {
+li {
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+a.button {
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: var(--bleu-marine);
-    color: white;
-}
-
-.footer p {
-    margin: 0;
-}
-
-/* Ajout d'animations */
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-button:hover {
-    transform: scale(1.05); /* Effet de zoom au survol */
+    padding: 20px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
