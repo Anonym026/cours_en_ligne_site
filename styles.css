@@ -1,89 +1,105 @@
-/* Couleurs principales */
-:root {
-    --primary-color: #1b263b;  /* Bleu foncé élégant */
-    --secondary-color: #415a77; /* Bleu moyen */
-    --accent-color: #e0aaff;    /* Rose violet doux */
-    --background-color: #0d1b2a; /* Très sombre, sans blanc */
-    --button-color: #e63946;    /* Rouge vibrant pour les boutons */
-    --text-color: #ffffff;      /* Texte blanc propre */
-}
-
-/* Style de base pour toutes les pages */
+/* Global styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1de;
+    color: #3d405b;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 
-/* Style pour les en-têtes */
+/* Header styles */
 header {
-    background-color: var(--primary-color);
-    padding: 30px 0;
+    background-color: #81b29a;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+h1 {
+    font-size: 2.5em;
     margin: 0;
-    font-size: 2.5rem;
-    color: var(--accent-color);
 }
 
-header p {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-}
-
-/* Style pour le contenu principal */
+/* Main content styles */
 main {
-    flex: 1;
-    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
     text-align: center;
 }
 
-/* Style pour les titres secondaires */
 h2 {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 30px;
-    color: var(--accent-color);
 }
 
-/* Liste de chapitres */
+/* Styles for the subjects' buttons */
+.subject-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subject-buttons a {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background-color: #e07a5f;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    width: 80%; /* Make the button larger */
+    max-width: 500px; /* Limit maximum size */
+}
+
+.subject-buttons a:hover {
+    background-color: #d65a41;
+}
+
+/* Styles for chapter download buttons */
 ul {
     list-style: none;
     padding: 0;
 }
 
-li {
+ul li {
     margin-bottom: 20px;
 }
 
-/* Boutons */
-a.button {
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #a29bfe; /* Light purple */
+    color: #ffffff;
+    font-size: 1.1em;
     text-decoration: none;
-    padding: 15px 25px;
-    background-color: var(--button-color);
-    color: var(--text-color);
     border-radius: 8px;
-    font-size: 1.2rem;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
-a.button:hover {
-    background-color: var(--accent-color);
+.button:hover {
+    background-color: #9683e8;
 }
 
-/* Style pour le pied de page */
+/* Footer styles */
 footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    margin-top: auto;
+    background-color: #3d405b;
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
