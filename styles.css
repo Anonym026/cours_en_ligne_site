@@ -20,11 +20,12 @@ header {
     text-align: center;
 }
 
-footer {
-    background: #333333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.introduction {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Boutons */
@@ -43,65 +44,29 @@ button:hover {
 }
 
 /* Liens */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0; /* Espacement entre les liens */
+}
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: white; /* Couleur des liens */
+    font-weight: bold; /* Gras pour une meilleure visibilité */
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Style des sections de matières */
-.section {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Sections spécifiques */
-.maths {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
+/* Footer */
+footer {
+    background: #333333;
     color: white;
-}
-
-.physique {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.chimie {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.svt {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.histoire {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.geographie {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.anglais {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-}
-
-.francais {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: black;
-}
-
-.philosophie {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: black;
+    text-align: center;
+    padding: 10px 0;
 }
