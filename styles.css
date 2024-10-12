@@ -23,9 +23,9 @@ header {
 .introduction {
     padding: 20px;
     margin: 10px;
-    background: white;
+    background: aquamarine;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(32, 218, 202, 0.1);
 }
 
 /* Boutons */
@@ -55,7 +55,7 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: white; /* Couleur des liens */
+    color: rgb(198, 207, 113); /* Couleur des liens */
     font-weight: bold; /* Gras pour une meilleure visibilité */
 }
 
