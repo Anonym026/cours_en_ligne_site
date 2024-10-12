@@ -1,24 +1,29 @@
+// Sélectionner tous les boutons de téléchargement
+const downloadButtons = document.querySelectorAll('.download-button');
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetchCourses();
+// Ajouter un événement de survol pour les boutons de téléchargement
+downloadButtons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        button.style.transition = 'background-color 0.3s ease';
+        button.style.backgroundColor = '#b92b27'; // Couleur de survol
+        button.style.color = '#ffffff'; // Couleur de texte en survol
+    });
+
+    button.addEventListener('mouseout', () => {
+        button.style.backgroundColor = ''; // Rétablir la couleur par défaut
+        button.style.color = ''; // Rétablir la couleur par défaut
+    });
 });
 
-function fetchCourses() {
-    const courses = [
-        { id: 1, title: 'Mathématiques', file: 'maths.pdf' },
-        { id: 2, title: 'Physique', file: 'physique.pdf' },
-        { id: 3, title: 'Chimie', file: 'chimie.pdf' },
-    ];
-
-    const courseList = document.getElementById('course-list');
-
-    courses.forEach(course => {
-        const courseItem = document.createElement('div');
-        courseItem.classList.add('course-item');
-        courseItem.innerHTML = `
-            <h3>${course.title}</h3>
-            <a href="pdfs/${course.file}" download>Télécharger PDF</a>
-        `;
-        courseList.appendChild(courseItem);
+// Gestion des téléchargements
+downloadButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const fileUrl = event.target.getAttribute('data-file-url');
+        if (fileUrl) {
+            // Lancer le téléchargement
+            window.location.href = fileUrl;
+        } else {
+            alert('Aucun fichier à télécharger.');
+        }
     });
-}
+});

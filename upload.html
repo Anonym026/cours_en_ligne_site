@@ -1,34 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload de Cours</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Télécharger un fichier</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Télécharger un Fichier</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="file-upload">Sélectionnez un fichier :</label>
+            <input type="file" id="file-upload" name="file-upload" accept=".pdf" required>
+            <button type="submit" class="download-button">Télécharger</button>
+        </form>
+        <footer>
+            &copy; 2024 Tous droits réservés
+        </footer>
+    </div>
 
-    <header>
-        <div class="container">
-            <h1>Upload d'un Cours</h1>
-            <p>Utilisez ce formulaire pour téléverser un nouveau cours en PDF.</p>
-        </div>
-    </header>
-
-    <main>
-        <section id="upload-section">
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="title" placeholder="Titre du cours" required>
-                <input type="file" name="pdf" accept=".pdf" required>
-                <button type="submit">Téléverser</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Cours en Ligne - Administration.</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
