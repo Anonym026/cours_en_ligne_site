@@ -1,18 +1,18 @@
 :root {
-    --isabelline: #edede9ff;
-    --timberwolf: #d6ccc2ff;
-    --linen: #f5ebe0ff;
-    --champagne-pink: #e3d5caff;
-    --pale-dogwood: #d5bdafff;
+    --beige-clair: #F4F1DE;
+    --rouge: #E07A5F;
+    --mauve-fonce: #3D405B;
+    --vert-clair: #81B29A;
+    --jaune-clair: #F2CC8F;
     
-    --gradient-bg: linear-gradient(180deg, var(--isabelline), var(--timberwolf), var(--linen), var(--champagne-pink), var(--pale-dogwood));
+    --gradient-bg: linear-gradient(180deg, var(--beige-clair), var(--jaune-clair));
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: var(--gradient-bg);
-    color: #333; /* Couleur de texte sombre pour le contraste */
+    color: var(--mauve-fonce); /* Couleur de texte sombre pour le contraste */
 }
 
 header {
@@ -23,6 +23,7 @@ header {
 h1 {
     margin: 0;
     font-size: 2.5em;
+    color: var(--rouge); /* Couleur du titre */
 }
 
 nav {
@@ -31,28 +32,29 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333; /* Couleur des liens */
-    background-color: rgba(255, 255, 255, 0.8); /* Lien en fond blanc transparent */
+    color: var(--mauve-fonce); /* Couleur des liens */
+    background-color: var(--jaune-clair); /* Lien en fond jaune */
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background-color: #2193b0; /* Changer la couleur au survol */
+    background-color: var(--rouge); /* Changer la couleur au survol */
     color: white; /* Changer la couleur du texte au survol */
 }
 
 .section {
     margin: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Couleur de fond légère pour les sections */
+    background: var(--beige-clair); /* Couleur de fond des sections */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 2em;
+    color: var(--mauve-fonce);
 }
 
 p {
@@ -63,7 +65,7 @@ p {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--jaune-clair);
 }
 
 .footer p {
