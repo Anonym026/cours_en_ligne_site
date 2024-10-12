@@ -1,86 +1,92 @@
-/* Styles généraux */
+/* Couleurs principales */
+:root {
+    --primary-color: #1b263b;  /* Bleu foncé élégant */
+    --secondary-color: #415a77; /* Bleu moyen */
+    --accent-color: #e0aaff;    /* Rose violet doux */
+    --background-color: #0d1b2a; /* Très sombre, sans blanc */
+    --button-color: #e63946;    /* Rouge vibrant pour les boutons */
+    --text-color: #ffffff;      /* Texte blanc propre */
+}
+
+/* Style de base pour toutes les pages */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #5e4b8e; /* Violet foncé */
-    color: #f0e6ff; /* Couleur du texte en violet clair */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style pour les en-têtes */
+header {
+    background-color: var(--primary-color);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Taille augmentée */
+    color: var(--accent-color);
+}
+
+header p {
+    font-size: 1.5rem; /* Taille augmentée */
+    color: var(--secondary-color);
+}
+
+/* Style pour le contenu principal */
+main {
+    flex: 1;
+    padding: 40px;
     text-align: center;
 }
 
-/* Titre principal */
-h1 {
-    font-size: 3em;
-    color: #e0b0ff; /* Violet clair pour Cours en Ligne */
-    margin-top: 20px;
+/* Style pour les titres secondaires */
+h2 {
+    font-size: 2.5rem; /* Taille augmentée */
+    margin-bottom: 30px;
+    color: var(--accent-color);
 }
 
-/* Matières */
-.matiere-container {
-    margin-top: 30px;
-}
-
-.matiere-container h2 {
-    font-size: 2em;
-    color: #e0b0ff; /* Violet clair pour Matières Disponibles */
-}
-
-.matiere-container .matiere {
-    display: block; /* Les matières sont désormais affichées verticalement */
-    margin: 10px 0;
-}
-
-.matiere-container .matiere button {
-    padding: 10px 20px;
-    background-color: #f0e6ff; /* Violet clair pour les boutons */
-    color: #5e4b8e; /* Violet foncé */
-    border: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 200px;
-}
-
-.matiere-container .matiere button:hover {
-    background-color: #e0b0ff; /* Violet plus clair au survol */
-    color: #fff;
-}
-
-/* Section des chapitres */
-.cours {
-    margin-top: 30px;
-}
-
-.cours h2 {
-    font-size: 2em;
-    color: #e0b0ff; /* Violet clair pour "Chapitres" */
-}
-
-.cours button {
-    padding: 15px 30px;
-    background-color: #e0b0ff; /* Violet clair pour les boutons Télécharger */
-    color: #5e4b8e; /* Violet foncé */
-    border: none;
-    font-size: 1.2em;
+/* Boutons */
+a.button {
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: var(--accent-color); /* Couleur violet clair pour les boutons */
+    color: var(--text-color);
     border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    display: inline-block; /* Utiliser inline-block pour que les boutons s'affichent côte à côte */
+    margin: 10px; /* Espacement pour les boutons */
 }
 
-.cours button:hover {
-    background-color: #d095e1; /* Violet encore plus clair au survol */
+a.button:hover {
+    background-color: #6C63FF; /* Couleur au survol */
 }
 
-/* Styles pour mobile */
-@media (max-width: 768px) {
-    .matiere-container .matiere button {
-        width: 100%;
-        font-size: 1em;
-    }
+/* Style pour le pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .cours button {
-        width: 100%;
-        font-size: 1em;
-    }
+/* Style pour les matières */
+.matieres-container {
+    display: flex;
+    flex-wrap: wrap; /* Permettre aux boutons de passer à la ligne */
+    justify-content: center; /* Centrer les boutons */
+}
+
+.matiere {
+    margin: 20px; /* Espacement pour chaque matière */
 }
