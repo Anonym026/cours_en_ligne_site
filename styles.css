@@ -1,105 +1,86 @@
-/* Global styles */
+/* Styles généraux */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f1de;
-    color: #3d405b;
+    background-color: #5e4b8e; /* Violet foncé */
+    color: #f0e6ff; /* Couleur du texte en violet clair */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Header styles */
-header {
-    background-color: #81b29a;
-    color: #ffffff;
-    padding: 20px;
     text-align: center;
-    width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Titre principal */
 h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 3em;
+    color: #e0b0ff; /* Violet clair pour Cours en Ligne */
+    margin-top: 20px;
 }
 
-/* Main content styles */
-main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
+/* Matières */
+.matiere-container {
+    margin-top: 30px;
 }
 
-h2 {
+.matiere-container h2 {
     font-size: 2em;
-    margin-bottom: 30px;
+    color: #e0b0ff; /* Violet clair pour Matières Disponibles */
 }
 
-/* Styles for the subjects' buttons - vertically aligned */
-.subject-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.matiere-container .matiere {
+    display: block; /* Les matières sont désormais affichées verticalement */
+    margin: 10px 0;
 }
 
-.subject-buttons a {
-    display: inline-block;
-    padding: 20px 40px;
-    margin: 0 auto;
-    background-color: #e07a5f; /* Couleur des matières */
-    color: #ffffff;
+.matiere-container .matiere button {
+    padding: 10px 20px;
+    background-color: #f0e6ff; /* Violet clair pour les boutons */
+    color: #5e4b8e; /* Violet foncé */
+    border: none;
     font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s ease;
-    width: 80%; /* Bouton plus grand */
-    max-width: 500px; /* Limite la taille */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
 }
 
-.subject-buttons a:hover {
-    background-color: #d65a41; /* Couleur des matières au survol */
+.matiere-container .matiere button:hover {
+    background-color: #e0b0ff; /* Violet plus clair au survol */
+    color: #fff;
 }
 
-/* Styles for chapter download buttons */
-ul {
-    list-style: none;
-    padding: 0;
+/* Section des chapitres */
+.cours {
+    margin-top: 30px;
 }
 
-ul li {
-    margin-bottom: 20px;
+.cours h2 {
+    font-size: 2em;
+    color: #e0b0ff; /* Violet clair pour "Chapitres" */
 }
 
-.button {
-    display: inline-block;
+.cours button {
     padding: 15px 30px;
-    background-color: #a29bfe; /* Violet clair */
-    color: #ffffff;
-    font-size: 1.1em;
-    text-decoration: none;
+    background-color: #e0b0ff; /* Violet clair pour les boutons Télécharger */
+    color: #5e4b8e; /* Violet foncé */
+    border: none;
+    font-size: 1.2em;
     border-radius: 8px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #9683e8;
+.cours button:hover {
+    background-color: #d095e1; /* Violet encore plus clair au survol */
 }
 
-/* Footer styles */
-footer {
-    margin-top: auto;
-    background-color: #3d405b;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
+/* Styles pour mobile */
+@media (max-width: 768px) {
+    .matiere-container .matiere button {
+        width: 100%;
+        font-size: 1em;
+    }
 
-footer p {
-    margin: 0;
+    .cours button {
+        width: 100%;
+        font-size: 1em;
+    }
 }
